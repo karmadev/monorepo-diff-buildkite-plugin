@@ -3,7 +3,19 @@
 [![Publish](https://github.com/chronotc/monorepo-diff-buildkite-plugin/actions/workflows/publish.yml/badge.svg)](https://github.com/chronotc/monorepo-diff-buildkite-plugin/actions/workflows/publish.yml)<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+# Karma
+
+This repo was originally forked because there were some changes that were easier to do in the Buildkite plugin than to do in our (at the time) Buildkite agent setup.
+
+ALL CHANGES that are made to this plugin should be documented here. It is definitely better to use an offical version that can receive updates without us having to update our fork. In the same manner: **make as few as possible changes to this repo, and keep them isolated**, so that updates are even possible without having to resolve merge conflicts.
+
+## Changes
+
+- Replaced use of `arch` with `uname -m` (arch isn't available on our agent machines, and I failed to figure out how to either add an alias in a good way, or install it properly).
+
 # monorepo-diff-buildkite-plugin
+
 
 This plugin will assist you in triggering pipelines by watching folders in your `monorepo`.
 
