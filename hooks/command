@@ -1,4 +1,5 @@
 #!/bin/bash
 set -euo pipefail
 
-./monorepo-diff-buildkite-plugin-linux-amd64
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+"$SCRIPT_DIR/monorepo-diff-buildkite-plugin-linux-amd64"
