@@ -12,7 +12,8 @@ ALL CHANGES that are made to this plugin should be documented here. It is defini
 
 ## Changes
 
-- Replaced use of `arch` with `uname -m` (arch isn't available on our agent machines, and I failed to figure out how to either add an alias in a good way, or install it properly).
+- Replaced the plugin name in plugin.go
+- Replaced the hooks/command to execute a pre-built binary instead of handling different versions and architectures (due to non-existing arch and curl on our agent machines)
 
 # monorepo-diff-buildkite-plugin
 
